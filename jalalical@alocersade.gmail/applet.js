@@ -16,8 +16,7 @@ String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
 
-function _onVertSepRepaint (area)
-{
+function _onVertSepRepaint (area) {
     let cr = area.get_context();
     let themeNode = area.get_theme_node();
     let [width, height] = area.get_surface_size();
@@ -107,7 +106,7 @@ MyApplet.prototype = {
     },
     
     on_applet_clicked: function(event) {
-        //~ this.menu.toggle();
+        this.menu.toggle();
     },
 
     on_settings_changed: function() {        
